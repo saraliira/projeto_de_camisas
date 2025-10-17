@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* altura mínima da tela */
+  flex-direction: column;
+  background-color: #f0f2f5;
+}
+
+/* ================= LOGIN ================== */
+.login-container {
+  background-color: #c08325;
+  width: 369px;
+  height: 474px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 95px;
+}
+
+.oi {
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+  margin-bottom: 60px;
+}
+
+.oi h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 5px; 
+}
+
+.oi h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 6px;
+  padding: 0 10px;
+  margin-bottom: 15px;
+}
+
+.input-group i {
+  color: #ccc;
+  margin-right: 8px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 12px 5px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #fff;
+  background-color: transparent;
+}
+
+.input-group select option {
+  color: #000; 
+}
+
+.login-cadastro {
+  text-align: left;
+  color: #fff;
+  margin: -5px 0 15px 5px; 
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  background-color: #7d5519;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+  transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+  background-color: #452e21;
+}
+
+/* ================= FOOTER ================== */
+.footer {
+  position: relative;
+  width: 100%;
+  background: #452e21;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: auto; 
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* ================= WAVES ================== */
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% { background-position-x: 1000px; }
+  100% { background-position-x: 0px; }
+}
+
+@keyframes animate {
+  0% { background-position-x: -1000px; }
+  100% { background-position-x: 0px; }
+}
